@@ -2,7 +2,7 @@ import Link from "next/link";
 import { headers, cookies } from "next/headers";
 import { createClient } from "@/utils/supabase/server";
 import { redirect } from "next/navigation";
-import Logo from "../_components/logo";
+import Logo from "../../../components/logo";
 
 export default function Login({
   searchParams,
@@ -74,7 +74,7 @@ export default function Login({
           <polyline points="15 18 9 12 15 6" />
         </svg>{" "}
         Back */}
-                <div className="p-6">
+                <div className="p-6 border">
             <Logo />
         </div>
       </Link>
