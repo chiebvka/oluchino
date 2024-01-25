@@ -21,7 +21,7 @@ export default function MainDesktopNavigation({}: Props) {
                 <Logo />
             </div>
           </Link>
-          <div className="border-2 border-black">
+          <div className="border-2 flex flex-col gap-y-2 border-black">
             <SearchInput />
             <div className="flex border-2 border-mint mt-2 items-center justify-center gap-x-6">
               {navigationLink.map((navigation) => (

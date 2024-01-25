@@ -1,5 +1,9 @@
 const navigationLink = [
     {
+        href:"/",
+        title:"Home"
+    },
+    {
         href:"/arrivals",
         title:"New Arrivals"
     },
