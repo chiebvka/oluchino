@@ -13,6 +13,7 @@ export default function HomeLayout({
       <>
         <MainBanner />
         <MainHeader />
+        
         <main className="min-h-screen max-w-7xl  mx-auto">
           {children}
           <Footer />

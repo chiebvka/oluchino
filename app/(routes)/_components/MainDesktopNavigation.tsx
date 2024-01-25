@@ -5,6 +5,7 @@ import { Heart, ShoppingCart } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 import SearchInput from './SearchInput'
+import navigationLink from '@/config/navigationConfig'
 
 type Props = {}
 
@@ -20,8 +21,15 @@ export default function MainDesktopNavigation({}: Props) {
                 <Logo />
             </div>
           </Link>
-          <div className="">
+          <div className="border-2 border-black">
             <SearchInput />
+            <div className="flex border-2 border-mint mt-2 items-center justify-center gap-x-6">
+              {navigationLink.map((navigation) => (
+                <Link key={navigation.title} href={navigation.href}>
+                  {navigation.title}
+                </Link>
+              ))}
+            </div>
           </div>
           <div className="flex">
             <div className="flex mx-4 space-x-4">

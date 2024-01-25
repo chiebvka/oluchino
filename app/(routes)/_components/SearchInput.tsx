@@ -8,7 +8,6 @@ import { useEffect, useState } from "react";
 import { useSearchParams, useRouter, usePathname } from "next/navigation"
 import { useDebounce } from "@/hooks/useDebounce";
 import { Input } from "@/components/ui/input";
-import Link from "next/link";
 
 type Props = {}
 
@@ -56,24 +55,7 @@ export default function SearchInput({}: Props) {
                 placeholder="Search for a product, brand or category"
             />
         </div>
-        <div className="flex border-2 border-mint items-center justify-center gap-x-6">
-        <Link href="/" 
-        passHref 
-         className={`relative inline-flex items-center rounded-full px-4 py-1.5 text-base font-semibold tracking-tight ${
-            isActiveLink("/") ? "text-mint" : "text-gray-500"
-          } antialiased ring-1 ring-transparent transition duration-200  active:scale-[96%] active:ring-black/20`}
-        >
-            New Arrivals
-        </Link>
-        <Link href="/store" 
-            passHref
-            className={`relative inline-flex items-center rounded-full px-4 py-1.5 text-base font-semibold tracking-tight ${
-                isActiveLink("/store") ? "text-mint" : "text-gray-500"
-              } antialiased ring-1 ring-transparent transition duration-200  active:scale-[96%] active:ring-black/20`}
-        >
-            Store
-        </Link>
-        </div>
+
     </div>
   )
 }

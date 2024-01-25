@@ -29,11 +29,11 @@ const MainBanner = () => {
           }}
         />
       </div>
-      <div className="mx-auto hidden w-full items-center justify-center gap-x-2 md:flex">
-        <p className="text-sm font-semibold leading-6 text-gray-900">
+      <div className="mx-auto flex w-full items-center justify-center gap-y-3 gap-x-2">
+        <p className=" text-xs md:text-sm font-semibold leading-6 text-gray-900">
             For top deals
         </p>
-        <p className="text-sm leading-6 text-gray-900">
+        <p className="text-xs md:text-sm leading-6 text-gray-900">
             and promotios on all our products
         </p>
         <Link
@@ -45,22 +45,6 @@ const MainBanner = () => {
           Deals
         </Link>
       </div>
-      {/* <div className="mx-auto w-full gap-2 text-center md:hidden">
-        <p className="text-sm font-semibold leading-6 text-gray-900">
-          {mainBannerConfig.title}
-        </p>
-        <p className="text-sm leading-6 text-gray-900">
-          {mainBannerConfig.description}
-        </p>
-        <Link
-          href={mainBannerConfig.link}
-          target="_blank"
-          className="inline-flex items-center rounded-full bg-gray-900 px-3.5 py-1 text-sm text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
-        >
-          <GithubIcon className="mr-1 h-4 w-4" />
-          {mainBannerConfig.button}
-        </Link>
-      </div> */}
     </div>
   );
 };

@@ -6,8 +6,8 @@ type Props = {}
 export default function Logo({}: Props) {
   return (
         <Image 
-            height={130}
-            width={130}
+            height={120}
+            width={120}
             alt='logo'
             src="/logo.svg"
         />
