@@ -1,11 +1,11 @@
 import Buttons from '@/components/Buttons'
-import Logo from '@/components/logo'
 import { Button } from '@/components/ui/button'
 import { Heart, ShoppingCart } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 import SearchInput from './SearchInput'
 import navigationLink from '@/config/navigationConfig'
+import Logo from '@/icons/logo'
 
 type Props = {}
 
