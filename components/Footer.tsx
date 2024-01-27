@@ -21,35 +21,11 @@ export default function Footer({}: Props) {
                 <p className='mt-4'>Your personal travel guide</p>
                 <div className="flex mt-4 space-x-5  sm:mt-0">
                 {sociaLinks.map((socials) =>(
-                    <Link target='_blank' key={socials.id} href="https://www.facebook.com/deluccis" className="text-palette hover:text-foreground dark:hover:text-white">
+                    <Link target='_blank' key={socials.id} href={socials.link} className="text-palette hover:text-foreground dark:hover:text-white">
                         <socials.icon />
                         <span className="sr-only">{socials.title}</span>
                     </Link>
                     ))}
-                    {/* <a href="#" className="text-palette hover:text-foreground dark:hover:text-white">
-                        <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
-                            <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
-                        </svg>
-                        <span className="sr-only">Discord community</span>
-                    </a>
-                    <a href="#" className="text-palette hover:text-foreground dark:hover:text-white">
-                        <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
-                        <path fillRule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clipRule="evenodd"/>
-                    </svg>
-                        <span className="sr-only">Twitter page</span>
-                    </a>
-                    <a href="#" className="text-palette hover:text-foreground dark:hover:text-white">
-                        <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clipRule="evenodd"/>
-                        </svg>
-                        <span className="sr-only">GitHub account</span>
-                    </a>
-                    <a href="#" className="text-palette hover:text-foreground dark:hover:text-white">
-                        <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clipRule="evenodd"/>
-                    </svg>
-                        <span className="sr-only">Dribbble account</span>
-                    </a> */}
                 </div>
               </span>
           </div>
@@ -107,12 +83,12 @@ export default function Footer({}: Props) {
                       </li>
                       <li className="mb-4">
                           <Link href="#" className="hover:underline flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 mr-1">
-                                <path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" />
-                                <path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" />
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"  width="24" height="24" viewBox="0 0 50 50">
+                                <path d="M14.241,18.4c3.754,2.568,7.761,4.558,11.872,6.464c6.938-2.519,13.185-5.886,19.438-9.408 c2.351-1.325,4.713-2.664,7.107-3.993c-2.977-2.531-11.679-1.219-14.154-1.219c-7.089,0.01-14.176,0-21.275-0.01 c-2.05-0.122-4.19-0.174-6.189,0.01H8.896c-1.436,0.007-3.418-0.117-5.006,0.408c2.233,1.421,4.267,3.08,6.326,4.719 C11.526,16.413,12.848,17.446,14.241,18.4z"></path> <path d="M11.406,20.105c-3.33-2.417-6.32-5.187-9.86-7.298c-0.617,1.664-0.282,3.875-0.492,5.422 c-0.009,0.061,0.011,0.112,0.011,0.163c-0.643,2.744-0.643,5.752-0.715,8.404c-0.073,2.57-0.613,6.271-0.188,9.468 c-0.039,1.539-0.054,3.155,0.283,4.508c6.607-5.211,13.631-10.385,20.712-14.902C17.772,24.189,14.505,22.354,11.406,20.105z"></path> <path d="M53.884,20.758c0.112-2.091,0.399-4.383,0.044-6.505c-6.632,3.681-12.99,7.452-19.807,10.593 c3.883,3.246,7.842,6.352,11.729,9.555c1.641,1.352,3.268,2.725,4.871,4.133c0.581,0.509,1.155,1.027,1.728,1.548 c0.176-0.348,0.338-0.713,0.465-1.12c0.715-2.251,0.427-4.944,0.251-7.444c0.023-0.549,0.049-1.101,0.075-1.655 C53.437,26.83,53.725,23.806,53.884,20.758z"></path> <path d="M31.06,26.188c-1.508,0.635-3.035,1.249-4.607,1.808c-0.579,0.206-1.054,0.062-1.38-0.254 c-0.244-0.113-0.488-0.229-0.731-0.343c-0.094,0.099-0.197,0.192-0.327,0.273C16.54,32.346,9.06,37.833,2.109,43.331 c0.608,0.388,1.395,0.623,2.427,0.635c4.545,0.055,9.098,0.021,13.65-0.022C26.056,44.156,33.94,44,41.808,44.185 c3.041,0.069,6.359-0.134,8.658-1.776c-6.157-5.604-12.762-10.553-19.125-15.911C31.224,26.4,31.137,26.295,31.06,26.188z"></path>
                             </svg>
 
-                            <span className='text-base ml-1'>hello@traveljournal.com</span>
+                            <span className='text-base ml-1'>hello@deluccis.com</span>
                           </Link>
                       </li>
                   </ul>
@@ -121,7 +97,7 @@ export default function Footer({}: Props) {
     </div>
     <hr className="my-6  border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <div className="sm:flex flex-end sm:items-center sm:justify-end">
-        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400"> All Rights Reserved | <a href="https://google.com/" className="text-palette hover:underline">Terms and Conditions</a> |  <a href="https://google.com/" className="text-[#f25f14] hover:underline">Privacy Policies</a>
+        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400"> All Rights Reserved | <a href="https://google.com/" className="text-palette hover:underline">Terms and Conditions</a> |  <a href="https://google.com/" className="text-palette hover:underline">Privacy Policies</a>
         </span>
     </div>
   </div>

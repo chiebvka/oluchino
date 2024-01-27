@@ -34,11 +34,71 @@ export const sociaLinks =[
     {
         id: 4,
         icon: TiktokIcon,
-        link:"https://www.facebook.com/deluccis"
+        link:"https://www.tiktok.com/@_deluccis"
     },
     {
         id: 5,
         icon: YoutubeIcon,
-        link:"https://www.facebook.com/deluccis"
+        link:"https://www.youtube.com/@deluccis"
+    },
+]
+
+export const deluccisLinks = [
+    {
+        link: "/about-us" ,
+        title: "About Us"
+    },
+    {
+        link: "/contact" ,
+        title: "Contact"
+    },
+    {
+        link: "/tracking" ,
+        title: "Track Orders"
+    },
+    {
+        link: "/blog" ,
+        title: "Blog"
+    },
+    {
+        link: "/loyalty" ,
+        title: "Loyalty Program"
+    },
+    {
+        link: "/Returns" ,
+        title: "Returns"
+    },
+    {
+        link: "/faq" ,
+        title: "FAQ"
+    },
+]
+
+
+
+export const legalLinks = [
+    {
+        link: "/privacy" ,
+        title: "Privacy Policies"
+    },
+    {
+        link: "/terms-and-conditions" ,
+        title: "Terms and Conditions"
+    },
+    {
+        link: "/shipping" ,
+        title: "PShipping and Deliveries"
+    },
+    {
+        link: "/how-to" ,
+        title: "How to"
+    },
+    {
+        link: "/refunds" ,
+        title: "Reports"
+    },
+    {
+        link: "/pickups" ,
+        title: "Pickup policies"
     },
 ]
