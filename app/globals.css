@@ -27,6 +27,9 @@
  
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
+    --white_30: hsl(0, 0%, 100%, 0.3);
+    --transition-2: 0.5s ease;
+    --gradient: linear-gradient(to right, transparent 50%, var(--white_30) 100%);
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
@@ -65,6 +68,56 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
   }
+}
+
+.has-bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.has-before,
+.has-after {
+  position: relative;
+  z-index: 1;
+}
+
+.has-before::before,
+.has-after::after {
+  content: "";
+  position: absolute;
+}
+
+.hover\:shine { overflow: hidden; }
+
+.hover\:shine .has-bg-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: var(--transition-2);
+}
+
+.hover\:shine:is(:hover, :focus) .has-bg-image { transform: scale(1.15); }
+
+.hover\:shine::before {
+  top: 0;
+  left: -140%;
+  bottom: 0;
+  width: 100%;
+  background-image: var(--gradient);
+  transform: skewX(-25deg);
+  transition: var(--transition-2);
+  z-index: 1;
+}
+
+.hover\:shine:is(:hover, :focus-within)::before { animation: shine 1s ease forwards; }
+
+@keyframes shine {
+  0% { transform: skewX(-25deg) translateX(0); }
+  100% { transform: skewX(-25deg) translateX(250%); }
 }
  
 @layer base {

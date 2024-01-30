@@ -87,7 +87,7 @@ export const legalLinks = [
     },
     {
         link: "/shipping" ,
-        title: "PShipping and Deliveries"
+        title: "Shipping and Deliveries"
     },
     {
         link: "/how-to" ,

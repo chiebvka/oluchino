@@ -14,7 +14,7 @@ export default function HomeLayout({
         <MainBanner />
         <MainHeader />
         
-        <main className="min-h-screen max-w-7xl  mx-auto">
+        <main className="min-h-screen  mx-auto">
           {children}
           <Footer />
         </main>

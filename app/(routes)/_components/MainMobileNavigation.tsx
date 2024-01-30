@@ -42,7 +42,7 @@ export default function MainMobileNavigation({}: Props) {
 
   return (
     
-    <div className='"mx-auto  lg:hidden w-full items-center border-2 border-black justify-between px-2 py-4 '>
+    <div className='"mx-auto  lg:hidden w-full items-center border-2 border-black justify-between p-3 py-6 '>
         <div className="flex w-full items-center justify-between">
             <div className='flex'>
                 <Sheet>

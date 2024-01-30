@@ -12,7 +12,7 @@ type Props = {}
 export default function MainDesktopNavigation({}: Props) {
   return (
     <>
-        <nav className="mx-auto hidden max-w-7xl w-full items-center border-2 border-black justify-between px-2 py-4 md:flex">
+        <nav className="mx-auto hidden max-w-7xl w-full items-center border-2 border-black justify-between p-4 py-6 md:flex">
           <Link
             href="/"
             className=" rounded-md no-underline   text-foreground bg-btn-background hover:bg-btn-background-hover flex items-center group text-sm"
