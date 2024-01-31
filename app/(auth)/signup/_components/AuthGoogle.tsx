@@ -4,9 +4,9 @@ import { Icons } from '@/components/Icons'
 import { Button } from '@/components/ui/button'
 import React from 'react'
 import { useFormStatus } from 'react-dom'
-type Props = {}
 
-export default function AuthGoogle({}: Props) {
+
+export default function AuthGoogle() {
     const {pending} = useFormStatus()
   return (
     <Button variant="outline" type="button" >

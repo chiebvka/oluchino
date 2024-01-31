@@ -1,56 +1,9 @@
 import Link from "next/link";
-import { headers, cookies } from "next/headers";
-import { createClient } from "@/utils/supabase/server";
-import { redirect } from "next/navigation";
-import Logo from "@/icons/logo";
 import AuthBanner from "../_components/AuthBanner";
 import LoginForm from "./_components/LoginForm";
 
 
 export default function Login() {
-  const signIn = async (formData: FormData) => {
-    "use server";
-
-    const email = formData.get("email") as string;
-    const password = formData.get("password") as string;
-    const cookieStore = cookies();
-    const supabase = createClient(cookieStore);
-
-    const { error } = await supabase.auth.signInWithPassword({
-      email,
-      password,
-    });
-
-    if (error) {
-      return redirect("/login?message=Could not authenticate user");
-    }
-
-    return redirect("/");
-  };
-
-  const signUp = async (formData: FormData) => {
-    "use server";
-
-    const origin = headers().get("origin");
-    const email = formData.get("email") as string;
-    const password = formData.get("password") as string;
-    const cookieStore = cookies();
-    const supabase = createClient(cookieStore);
-
-    const { error } = await supabase.auth.signUp({
-      email,
-      password,
-      options: {
-        emailRedirectTo: `${origin}/auth/callback`,
-      },
-    });
-
-    if (error) {
-      return redirect("/login?message=Could not authenticate user");
-    }
-
-    return redirect("/login?message=Check email to continue sign in process");
-  };
 
   return (
     <div className='h-full border-2 w-11/12 mx-auto md:w-full border-palette rounded-lg'>

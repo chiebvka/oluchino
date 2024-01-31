@@ -4,14 +4,13 @@ import Link from "next/link";
 import AuthBanner from '../_components/AuthBanner';
 import ForgotForm from './_components/ForgotForm';
 
-type Props = {}
 
 export const metadata: Metadata = {
     title: "Deluccis",
     description: "Forgot Password?",
   }
 
-export default function page({}: Props) {
+export default function page() {
   return (
     <div className='h-full border-2 w-11/12 mx-auto md:w-full border-palette rounded-lg'>
     <div className="container relative w-full h-full flex flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0">

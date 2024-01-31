@@ -5,9 +5,8 @@ import { Button } from '@/components/ui/button'
 import React from 'react'
 import { useFormStatus } from 'react-dom'
 
-type Props = {}
 
-export default function ResetButton({}: Props) {
+export default function ResetButton() {
     
     const {pending} = useFormStatus()
 

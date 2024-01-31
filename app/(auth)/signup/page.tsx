@@ -10,8 +10,6 @@ import AuthBanner from '../_components/AuthBanner'
 
 
 
-type Props = {}
-
 
 export const metadata: Metadata = {
     title: "Deluccis",

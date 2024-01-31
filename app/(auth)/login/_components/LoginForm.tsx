@@ -13,7 +13,6 @@ import Link from "next/link";
 import LoginButton from './LoginButton';
 import AuthGoogle from '../../signup/_components/AuthGoogle';
 
-type Props = {}
 interface UserAuthFormProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export default function LoginForm({ className, ...props }: UserAuthFormProps) {

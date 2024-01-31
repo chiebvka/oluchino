@@ -7,10 +7,9 @@ import { Label } from '@/components/ui/label';
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect } from "react";
 import { useToast } from "@/components/ui/use-toast";
-import Link from "next/link";
 import reset from '@/actions/auth/reset';
 import ResetButton from './ResetButton';
-import AuthGoogle from '../../signup/_components/AuthGoogle';
+
 
 interface UserAuthFormProps extends React.HTMLAttributes<HTMLDivElement> {}
 

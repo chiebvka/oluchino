@@ -13,7 +13,6 @@ import Link from "next/link";
 import AuthButtons from "./AuthButtons";
 import AuthGoogle from './AuthGoogle';
 
-type Props = {}
 interface UserAuthFormProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 
