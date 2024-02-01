@@ -24,6 +24,8 @@ const config = {
         ring: "hsl(var(--ring))",
         palette: "#7C5295",
         mint: "#7AACB3",
+        palettes: "#E14A8C",
+        mints: "#8fe5f6",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {

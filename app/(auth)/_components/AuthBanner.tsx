@@ -15,7 +15,7 @@ export default function AuthBanner(props: Props) {
             <Logo />
         </Link>
     </div>
-    <div className="relative z-20 text-opacity-100 text-extrabold text-black mt-auto">
+    <div className="relative z-20  text-opacity-100 text-extrabold text-black mt-auto">
         <blockquote className="space-y-2">
         <p className="text-lg">
             &ldquo;{quotes}&rdquo;

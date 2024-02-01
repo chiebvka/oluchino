@@ -9,6 +9,8 @@ import DeployButton from "@/components/DeployButton";
 import { Button } from "@/components/ui/button";
 import Buttons from "@/components/Buttons";
 import Hero from "./_components/Hero";
+import Collection from "./_components/Collections";
+import ProductList from "./_components/ProductList";
 
 export default async function Index() {
   const cookieStore = cookies();
@@ -29,6 +31,8 @@ export default async function Index() {
   return (
     <>
       <Hero />
+      <Collection />
+      <ProductList />
     </>
   );
 }
