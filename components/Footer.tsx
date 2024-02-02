@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { deluccisLinks, legalLinks, sociaLinks } from '@/config/footer';
 import Logo from '@/icons/logo';
 import { Mails, PhoneCall } from 'lucide-react';
+import { Separator } from './ui/separator';
 
 
 type Props = {}
@@ -12,6 +13,7 @@ export default function Footer({}: Props) {
     const years = new Date()
   return (
     <footer className=" w-full pt-5 text-foreground">
+      <Separator className='mt-5' />
       <div className="mx-auto w-11/12 max-w-screen-xl p-3 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">

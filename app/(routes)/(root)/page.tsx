@@ -11,6 +11,11 @@ import Buttons from "@/components/Buttons";
 import Hero from "./_components/Hero";
 import Collection from "./_components/Collections";
 import ProductList from "./_components/ProductList";
+import Advertorials from "./_components/Advertorials";
+import Brands from "./_components/Brands";
+import Why from "./_components/Why";
+import Discover from "./_components/Discover";
+import NewsLetter from "./_components/NewsLetter";
 
 export default async function Index() {
   const cookieStore = cookies();
@@ -31,8 +36,14 @@ export default async function Index() {
   return (
     <>
       <Hero />
+      <Advertorials />
+      <ProductList />
       <Collection />
       <ProductList />
+      <Brands />
+      <Why />
+      <Discover />
+      <NewsLetter />
     </>
   );
 }

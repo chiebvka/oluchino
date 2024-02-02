@@ -30,7 +30,7 @@ export default function Hero({}: Props) {
 
       
   return (
-        <div className=" h-[50vh] lg:h-[65vh] border-2  mx-auto">
+        <div className=" h-[50vh] lg:h-[65vh]   mx-auto">
             <Carousel
                 plugins={[plugin.current]}
                 className='relative h-full w-[92%] gap-x-7 mx-auto'
