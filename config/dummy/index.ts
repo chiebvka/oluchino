@@ -42,3 +42,91 @@ export  const carousel = [
         banner: "https://images.pexels.com/photos/17758065/pexels-photo-17758065/free-photo-of-a-tote-bag-with-writing-on-it-in-the-sand.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
 ]
+
+
+export const products = [
+    {
+        id: 1,
+        title: 'Hello World',
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi?",
+        imageLink: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        rating: 4.3  
+    },
+    {
+        id: 2,
+        title: 'Junior Foll',
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi?",
+        imageLink: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        rating: 3.4  
+    },
+    {
+        id: 3,
+        title: 'Lorem Ipsumdi',
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi?",
+        imageLink: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        rating: 2.1  
+    },
+    {
+        id: 4,
+        title: 'Open Graph lors',
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi?",
+        imageLink: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        rating: 5.0  
+    },
+    {
+        id: 5,
+        title: 'Here we go lord of the rings',
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi?",
+        imageLink: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        rating: 4.1  
+    },
+    {
+        id: 6,
+        title: 'Dollarama Atlantic',
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi?",
+        imageLink: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        rating: 3.9 
+    },
+    {
+        id: 7,
+        title: 'Walmamrt Supercenter',
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi?",
+        imageLink: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        rating: 4.3  
+    },
+    {
+        id: 8,
+        title: 'Old Navy',
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi?",
+        imageLink: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        rating: 4.9  
+    },
+    {
+        id: 9,
+        title: 'Tubidy Youtube',
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi?",
+        imageLink: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        rating: 2.9 
+    },
+    {
+        id: 10,
+        title: 'Google Drive',
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi?",
+        imageLink: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        rating: 4.3  
+    },
+    {
+        id: 11,
+        title: 'Logo Ipsum',
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi?",
+        imageLink: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        rating: 4.7  
+    },
+    {
+        id: 12,
+        title: 'The Sopranos',
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum vitae dolores corrupti quaerat enim deleniti iste nostrum ratione modi?",
+        imageLink: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        rating: 1.1  
+    },
+]
