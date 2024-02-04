@@ -1,6 +1,6 @@
 import Buttons from '@/components/Buttons'
 import { Button } from '@/components/ui/button'
-import { Heart, ShoppingCart } from 'lucide-react'
+import { Heart, ShoppingBag } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 import SearchInput from './SearchInput'
@@ -33,7 +33,7 @@ export default function MainDesktopNavigation({}: Props) {
           </div>
           <div className="flex">
             <div className="flex mx-4 space-x-4">
-              <Link href="/cart" className="text-center text-gray-700 hover:text-slate-400 transition relative">
+              <Link href="/wishlist" className="text-center text-gray-700 hover:text-slate-400 transition relative">
                   <div className="text-2xl">
                       <Heart  size={25} />
                   </div>
@@ -41,7 +41,7 @@ export default function MainDesktopNavigation({}: Props) {
               </Link>
               <Link href="/cart" className="text-center text-gray-700 hover:text-slate-400 transition relative">
                   <div className="text-2xl">
-                      <ShoppingCart size={25} />
+                      <ShoppingBag size={25} />
                   </div>
                   <span className="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-palette text-white text-[10px]">0</span>
               </Link>
