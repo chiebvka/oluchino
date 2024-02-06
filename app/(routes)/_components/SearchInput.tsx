@@ -5,7 +5,7 @@
 import qs from "query-string";
 import { Search } from "lucide-react";
 import { useEffect, useState } from "react";
-import { useSearchParams, useRouter, usePathname } from "next/navigation"
+import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import { useDebounce } from "@/hooks/useDebounce";
 import { Input } from "@/components/ui/input";
 

@@ -14,19 +14,19 @@ import {
 
 import Buttons from '@/components/Buttons'
 import { formatPrice } from '@/lib/format'
+import PageHeadings from '@/components/PageHeadings'
 
 type Props = {}
 
 export default function page({}: Props) {
   return (
     <div className='min-h-screen w-full relative my-auto py-16 gap-y-5 px-3 max-w-7xl mx-auto '>
-        <div className="flex flex-col gap-y-5 justify-center">
-            <h1 className='lg:text-3xl md:text-2xl text-lg  font-extrabold '>Your Cart</h1>
-            <p className='text-sm md:text-base'>Find your most trusted and reliable brands while also discovering new brands </p>
-        </div>
-        <Separator className='my-5' />
+      <PageHeadings
+        title='Your Cart' 
+        description='Find your most trusted and reliable brands while also discovering new brands'
+      />
         {/* <EmptyCart /> */}
-        <div className='flex flex-col-reverse md:flex-row gap-x-6 gap-y-5 items-start justify-center gap-6 rounded-lg p-8 h-full w-full border-2 border-black '>
+        <div className='flex flex-col-reverse md:flex-row gap-x-6 gap-y-5 items-start justify-center gap-6 rounded-lg p-5 md:p-8 h-full w-full border-2 border-black '>
           <div className='flex flex-col gap-y-3 lg:p-4  md:basis-2/3 w-full'>
             {products.slice(0, 5).map((product) => (
 

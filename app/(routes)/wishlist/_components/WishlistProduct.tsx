@@ -5,12 +5,17 @@ import {  ShoppingBag, Trash2, X } from 'lucide-react';
 import { formatPrice } from '@/lib/format';
 
 
-interface wishlistProps  {imageSrc: string, productName: string, price:number, newPrice: number}
+interface wishlistProps  {
+    imageSrc: string, 
+    productName: string, 
+    price:number, 
+    newPrice: number
+}
 
 export default function WishlistProduct({imageSrc, productName, price, newPrice}: wishlistProps) {
   return (
     <div className="border-2 rounded-lg shadow-md flex flex-col md:flex-row h-full  lg:min-h-56 lg:max-h-56 ">
-    <Link href='/' className="flex w-full md:5/12 lg:w-4/12 rounded-lg">
+    <Link href='/' className="flex w-full  md:5/12 lg:w-4/12 rounded-lg">
     <img src={imageSrc} alt={productName} className='object-cover  rounded-lg h-full w-full'  />
     </Link>
     <div className="w-full  lg:w-6/12  p-2 gap-y-2 flex justify-between flex-col">
