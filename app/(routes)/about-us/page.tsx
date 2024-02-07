@@ -1,4 +1,6 @@
+import Buttons from '@/components/Buttons'
 import PageHeadings from '@/components/PageHeadings'
+import Link from 'next/link'
 import React from 'react'
 
 type Props = {}
@@ -20,25 +22,25 @@ export default function page({}: Props) {
                   <div className="w-full px-3 sm:px-4 xl:w-1/2">
                     <div className="py-3 sm:py-4">
                       <img
-                        src="https://i.ibb.co/gFb3ns6/image-1.jpg"
+                        src="sisi.jpg"
                         alt=""
-                        className="w-full rounded-2xl"
+                        className="w-full  border-2 border-palette  rounded-2xl"
                       />
                     </div>
                     <div className="py-3 sm:py-4">
                       <img
-                        src="https://i.ibb.co/rfHFq15/image-2.jpg"
+                        src="solo.jpeg"
                         alt=""
-                        className="w-full rounded-2xl"
+                        className="w-full border-2 border-palette  rounded-2xl"
                       />
                     </div>
                   </div>
                   <div className="w-full px-3 sm:px-4 xl:w-1/2">
                     <div className="relative z-10 my-4">
                       <img
-                        src="https://i.ibb.co/9y7nYCD/image-3.jpg"
+                        src="lug.jpeg"
                         alt=""
-                        className="w-full rounded-2xl"
+                        className="w-full border-2 border-palette rounded-2xl"
                       />
                       <span className="absolute text-palette -right-7 -bottom-7 z-[-1]">
                         <svg
@@ -616,55 +618,48 @@ export default function page({}: Props) {
               </div>
               <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
                 <div className="mt-10 lg:mt-0">
-                  <span className="block mb-4 text-lg font-semibold text-primary">
-                    Why Choose Us
+                  <span className="block mb-4 lg:text-3xl md:text-2xl text-lg font-semibold text-primary">
+                    Welcome to <span className='text-palette'>Deluccis</span> 
                   </span>
-                  <h2 className="mb-5 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px]">
-                    Make your customers happy by giving services.
-                  </h2>
+  
                   <p className="mb-5 text-base text-body-color dark:text-dark-6">
-                    It is a long established fact that a reader will be distracted
-                    by the readable content of a page when looking at its layout.
-                    The point of using Lorem Ipsum is that it has a more-or-less.
+                    At <span className='text-palette'>Deluccis</span>, we're more than just an online store – we're a destination for inspiration, exploration, and exceptional shopping experiences. Our story is one of passion, innovation, and a relentless commitment to serving our customers.
                   </p>
                   <p className="mb-8 text-base text-body-color dark:text-dark-6">
-                    A domain name is one of the first steps to establishing your
-                    brand. Secure a consistent brand image with a domain name that
-                    matches your business.
+                  <span className='text-palette'>Deluccis</span> began as a humble vision to revolutionize the way people shop both online and offline. What started as a small stall in Lagos Island is being eveolved into a national platform, offering a curated selection of products that elevate everyday moments and empower our customers to save more by getting the best quality products at teh best possible price.
                   </p>
-                  <a
-                    href="/store"
-                    className="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-primary hover:bg-opacity-90"
-                  >
-                    Get Started
-                  </a>
+                  <Link href="/store">
+                    <Buttons text='Get Started' />                    
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <div className="bg-gray-100 p-8 md:flex md:items-center">
-          <div className="md:w-1/2 md:pr-8">
-            <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
+        <div className="border-2 rounded-md shadow-md p-8 gap-y-3  flex flex-col md:flex-row w-full items-center">
+          <div className="flex flex-col basis-1/2 ">
+            <h2 className="block mb-4 lg:text-3xl md:text-2xl text-lg font-semibold text-primary">Our <span className='text-palette'>Mission</span> </h2>
             <p className="text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Our mission at <span className='text-palette'>Deluccis</span> is simple yet profound – to enrich lives through exceptional products and unparalleled service. We believe that shopping should be more than just a transaction; it should be an experience that inspires, delights, and leaves a lasting impression.
             </p>
           </div>
 
-          <div className="md:w-1/2 mt-4 md:mt-0">
-            <div className="flex space-x-4">
-              <div className="flex-1 bg-white p-4 rounded-lg shadow-md">
-                <p className="text-xl font-semibold text-gray-800">44 million</p>
-                <p className="text-gray-600">Transactions every 24 hours</p>
+          <div className="flex flex-col basis-1/2  w-full">
+            <div className="flex flex-col md:flex-row gap-y-4 w-full  gap-x-4">
+              <div className="flex-1 relative flex items-center justify-center shadow-lg p-4 rounded-lg ">
+                    <div className="absolute inset-0 bg-palette -z-10 bg-opacity-20 rounded-lg" />
+                <p className="text-xl font-semibold text-gray-800">Quality</p>
+
               </div>
-              <div className="flex-1 bg-white p-4 rounded-lg shadow-md">
-                <p className="text-xl font-semibold text-gray-800">$119 trillion</p>
-                <p className="text-gray-600">Assets under holding</p>
+              <div className="flex-1 relative flex items-center justify-center shadow-lg p-4 rounded-lg ">
+                    <div className="absolute inset-0 bg-mint -z-10 bg-opacity-20 rounded-lg" />
+                <p className="text-xl font-semibold text-gray-800">Speed</p>
+
               </div>
-              <div className="flex-1 bg-white p-4 rounded-lg shadow-md">
-                <p className="text-xl font-semibold text-gray-800">46,000</p>
-                <p className="text-gray-600">New users annually</p>
+              <div className="flex-1 relative flex items-center justify-center shadow-lg p-4 rounded-lg ">
+                    <div className="absolute inset-0 bg-palettes -z-10 bg-opacity-20 rounded-lg" />
+                <p className="text-xl font-semibold text-gray-800">Affordability</p>
               </div>
             </div>
           </div>
