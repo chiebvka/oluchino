@@ -15,9 +15,9 @@ import {
     CardFooter,
     CardHeader,
     CardTitle,
-} from "@/components/ui/card"
+} from "@/components/ui/card";
 import Link from 'next/link';
-import { CheckCheck, X } from 'lucide-react'
+import { AlignHorizontalJustifyCenter, CheckCheck, X } from 'lucide-react'
 import { formatPrice } from '@/lib/format';
 import { Separator } from '@/components/ui/separator';
 import { Input } from '@/components/ui/input';
@@ -232,15 +232,15 @@ export default function ProductDetails({}: Props) {
                     <p className="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio numquam enim facere.</p>
                     <p className="mt-4">Amet consectetur adipisicing elit. Optio numquam enim facere. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore rerum nostrum eius facere, ad neque.</p>
                 </div> */}
-                <Tabs defaultValue="account" className="w-full">
+                <Tabs defaultValue="product" className="w-full">
                     <TabsList className="grid w-full lg:w-4/12 grid-cols-2">
-                        <TabsTrigger value="account">Account</TabsTrigger>
+                        <TabsTrigger value="product">Product</TabsTrigger>
                         <TabsTrigger value="reviews">
                             Reviews
                             <span className="ml-2 block rounded-full bg-palette px-2 py-px text-xs font-bold text-gray-100"> 1,209 </span>
                         </TabsTrigger>
                     </TabsList>
-                    <TabsContent value="account">
+                    <TabsContent value="product">
                         <Card>
                             <CardHeader>
                                 <CardTitle>About This Product</CardTitle>
@@ -253,7 +253,79 @@ export default function ProductDetails({}: Props) {
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aliquam delectus accusamus, doloribus labore blanditiis?
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, ipsum?
                                 </div>
+
                             </CardContent>
+                            <div className="flex w-full gap-x-3 gap-y-3 mx-auto  border-2 border-black flex-col md:flex-row">
+
+                                <Card className='md:basis-1/2'>
+                                    <CardHeader className="pb-3">
+                                        <CardTitle>Key Features</CardTitle>
+                                        <CardDescription>
+                                        Choose what you want to be notified about.
+                                        </CardDescription>
+                                    </CardHeader>
+                                    <CardContent className="grid gap-1">
+                                        <div className="-mx-2 flex items-start space-x-4 rounded-md bg-palette/20 p-2 text-accent-foreground transition-all">
+                                            <AlignHorizontalJustifyCenter className="mt-px h-5 w-5" />
+                                            <div className="space-y-1">
+                                                <p className="text-sm font-medium leading-none">Everything</p>
+                                            </div>
+                                        </div>
+                                        <div className="-mx-2 flex items-start space-x-4 rounded-md bg-mint/20 p-2 text-accent-foreground transition-all">
+                                            <AlignHorizontalJustifyCenter className="mt-px h-5 w-5" />
+                                            <div className="space-y-1">
+                                                <p className="text-sm font-medium leading-none">Everything</p>
+                                            </div>
+                                        </div>
+                                        <div className="-mx-2 flex items-start space-x-4 rounded-md bg-palette/20 p-2 text-accent-foreground transition-all">
+                                            <AlignHorizontalJustifyCenter className="mt-px h-5 w-5" />
+                                            <div className="space-y-1">
+                                                <p className="text-sm font-medium leading-none">Everything</p>
+                                            </div>
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                                <Card className='md:basis-1/2'>
+                                    <CardHeader className="pb-3">
+                                        <CardTitle>What's in the box</CardTitle>
+                                        <CardDescription>
+                                        Choose what you want to be notified about.
+                                        </CardDescription>
+                                    </CardHeader>
+                                    <CardContent className="grid gap-1">
+                                        <div className="-mx-2 flex items-start space-x-4 rounded-md bg-palette/20 p-2 text-accent-foreground transition-all">
+                                            <AlignHorizontalJustifyCenter className="mt-px h-5 w-5" />
+                                            <div className="space-y-1">
+                                                <p className="text-sm font-medium leading-none">Everything</p>
+                                            </div>
+                                        </div>
+                                        <div className="-mx-2 flex items-start space-x-4 rounded-md bg-mint/20 p-2 text-accent-foreground transition-all">
+                                            <AlignHorizontalJustifyCenter className="mt-px h-5 w-5" />
+                                            <div className="space-y-1">
+                                                <p className="text-sm font-medium leading-none">Everything</p>
+                                            </div>
+                                        </div>
+                                        <div className="-mx-2 flex items-start space-x-4 rounded-md bg-palette/20 p-2 text-accent-foreground transition-all">
+                                            <AlignHorizontalJustifyCenter className="mt-px h-5 w-5" />
+                                            <div className="space-y-1">
+                                                <p className="text-sm font-medium leading-none">Everything</p>
+                                            </div>
+                                        </div>
+                                        <div className="-mx-2 flex items-start space-x-4 rounded-md bg-mint/20 p-2 text-accent-foreground transition-all">
+                                            <AlignHorizontalJustifyCenter className="mt-px h-5 w-5" />
+                                            <div className="space-y-1">
+                                                <p className="text-sm font-medium leading-none">Everything</p>
+                                            </div>
+                                        </div>
+                                        <div className="-mx-2 flex items-start space-x-4 rounded-md bg-palette/20 p-2 text-accent-foreground transition-all">
+                                            <AlignHorizontalJustifyCenter className="mt-px h-5 w-5" />
+                                            <div className="space-y-1">
+                                                <p className="text-sm font-medium leading-none">Everything</p>
+                                            </div>
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                            </div>
                         </Card>
                     </TabsContent>
                     <TabsContent value="reviews">
@@ -267,7 +339,7 @@ export default function ProductDetails({}: Props) {
                         <CardContent className="space-y-2">
                             <div className="space-y-1">
                                 <section className="flex items-center py-16 bg-gray-100 font-poppins dark:bg-gray-800 ">
-                                    <div className="justify-center flex-1 max-w-6xl px-4 py-6 mx-auto lg:py-4 md:px-6">
+                                    <div className="justify-center flex-1 max-w-6xl px-2 py-3 mx-auto lg:py-4 md:px-6">
                                         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                                             <div className="p-6 mb-6 bg-gray-50 dark:bg-gray-900">
                                                 <h2 className="mb-6 text-xl font-semibold text-left font-gray-600 dark:text-gray-400">
@@ -414,37 +486,17 @@ export default function ProductDetails({}: Props) {
                                                     <Buttons text='Leave a Review' />
                                                 </Link>
                                             </div>
-                                            {/* <div className="p-6 mb-6 bg-white dark:bg-gray-900">
-                                                <h2 className="mb-6 text-xl font-semibold text-left font-gray-600 dark:text-gray-400">
-                                                    Leave a comment</h2>
-                                                <form action="" className="">
-                                                    <div className="mb-6 ">
-                                                        <input type="text" placeholder="your email" 
-                                                            className="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-100 border rounded dark:placeholder-gray-500 dark:text-gray-400 dark:border-gray-800 dark:bg-gray-800 " />
-                                                    </div>
-                                                    <div className="mb-6 ">
-                                                        <textarea placeholder="write a comment" 
-                                                            className="block w-full px-4 leading-tight text-gray-700 bg-gray-100 border rounded dark:placeholder-gray-500 py-7 dark:text-gray-400 dark:border-gray-800 dark:bg-gray-800 "></textarea>
-                                                    </div>
-                                                    <div className="">
-                                                        <button
-                                                            className="px-4 py-2 text-xs font-medium text-gray-100 bg-palette hover:bg-palette dark:bg-palette dark:hover:bg-palette">
-                                                            Submit comment
-                                                        </button>
-                                                    </div>
-                                                </form>
-                                            </div> */}
                                         </div>
                                         <span className="flex items-center bg-gray-50  font-poppins dark:bg-gray-800 ">
-                                            <div className="justify-center flex-1 px-4 py-6 mx-auto max-w-7xl lg:py-4 md:px-6">
-                                                <h2 className="mb-4 text-xl font-semibold text-left font-gray-600 dark:text-gray-400">
+                                            <div className="justify-center flex-1 px-2 py-3 mx-auto max-w-7xl lg:py-4 md:px-6">
+                                                <h2 className="mb-4 text-xl font-semibold px-2 font-gray-600 dark:text-gray-400">
                                                     Recent Reviews</h2>
                                                 <div className="flex flex-wrap py-4 mb-6 border-t border-b border-gray-200 dark:border-gray-700">
                                                     <div className="w-full px-4 mb-4 lg:mb-0 md:w-1/4">
                                                         <h2 className="mb-1 text-lg font-semibold text-gray-900 dark:text-gray-400">
                                                             Richard David
                                                         </h2>
-                                                        <p className="text-xs text-gray-600 dark:text-gray-400">Joined 12 SEP 2012. </p>
+                                                        <p className="text-xs text-gray-600 dark:text-gray-400">24 Feb 2024</p>
                                                     </div>
                                                     <div className="w-full px-4 mb-4 md:w-1/4 lg:mb-0">
                                                         <div className="flex items-center">
@@ -499,7 +551,7 @@ export default function ProductDetails({}: Props) {
                                                         <h2 className="mb-1 text-lg font-semibold text-gray-900 dark:text-gray-400">
                                                             Heny Singh
                                                         </h2>
-                                                        <p className="text-xs text-gray-600 dark:text-gray-400">Joined 12 SEP 2012. </p>
+                                                        <p className="text-xs text-gray-600 dark:text-gray-400">24 Feb 2024</p>
                                                     </div>
                                                     <div className="w-full px-4 mb-4 md:w-1/4 lg:mb-0">
                                                         <div className="flex items-center">
@@ -554,7 +606,7 @@ export default function ProductDetails({}: Props) {
                                                         <h2 className="mb-1 text-lg font-semibold text-gray-900 dark:text-gray-400">
                                                             Jumbli lobi
                                                         </h2>
-                                                        <p className="text-xs text-gray-600 dark:text-gray-400">Joined 12 SEP 2012. </p>
+                                                        <p className="text-xs text-gray-600 dark:text-gray-400">24 Feb 2024</p>
                                                     </div>
                                                     <div className="w-full px-4 mb-4 md:w-1/4 lg:mb-0">
                                                         <div className="flex items-center">
