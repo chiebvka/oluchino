@@ -237,7 +237,7 @@ export default function ProductDetails({}: Props) {
                         <TabsTrigger value="product">Product</TabsTrigger>
                         <TabsTrigger value="reviews">
                             Reviews
-                            <span className="ml-2 block rounded-full bg-palette px-2 py-px text-xs font-bold text-gray-100"> 1,209 </span>
+                                <span className="ml-2 block rounded-full bg-palette px-2 py-px text-xs font-bold text-gray-100"> 1,209 </span>
                         </TabsTrigger>
                     </TabsList>
                     <TabsContent value="product">

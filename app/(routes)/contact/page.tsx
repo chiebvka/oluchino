@@ -6,7 +6,7 @@ type Props = {}
 
 export default function page({}: Props) {
   return (
-    <div className='min-h-screen w-full relative my-auto py-16 gap-y-5 px-3 max-w-7xl mx-auto '>
+    <div className='min-h-screen w-full relative my-auto py-16 gap-y-5 px-3  max-w-6xl xl:max-w-7xl mx-auto '>
       <PageHeadings 
         title='Contact Us' 
         description="We'd love to hear from you. Start a chat with our customer friendly team"

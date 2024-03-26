@@ -76,7 +76,6 @@ export default function ProductList({}: Props) {
                                     <CardDescription className='line-clamp-2'>{product.description}</CardDescription>
                                 </CardContent>
                                     <CardFooter className="justify-between space-x-2">
-                                        <Buttons text='Buy Now' />
                                         <Buttons text='Add To Cart' />
                                     </CardFooter>
                             </Card>

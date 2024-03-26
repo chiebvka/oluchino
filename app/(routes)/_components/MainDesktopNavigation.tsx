@@ -6,10 +6,18 @@ import React from 'react'
 import SearchInput from './SearchInput'
 import navigationLink from '@/config/navigationConfig'
 import Logo from '@/icons/logo'
+import { createClient } from '@/utils/supabase/server'
+import AvatarNav from './AvatarNav'
 
 type Props = {}
 
-export default function MainDesktopNavigation({}: Props) {
+export default async function MainDesktopNavigation({}: Props) {
+  const supabase = createClient();
+    
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
   return (
     <>
         <nav className="mx-auto hidden max-w-7xl w-full items-center border-2 border-black justify-between p-4 py-6 md:flex">
@@ -47,9 +55,13 @@ export default function MainDesktopNavigation({}: Props) {
               </Link>
             </div>
             <div className="flex -mt-2 ml-4">
+              {user ? 
+                <AvatarNav />
+              :
               <Link href="/login">
                 <Buttons text='Login' />
               </Link>
+              }
             </div>
           </div>
         </nav>

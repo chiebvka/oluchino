@@ -7,7 +7,7 @@ type Props = {}
 
 export default function page({}: Props) {
   return (
-    <div className='min-h-screen w-full relative my-auto py-16 gap-y-5 px-3 max-w-7xl mx-auto '>
+    <div className='min-h-screen w-full relative my-auto py-16 gap-y-5 px-3  max-w-6xl xl:max-w-7xl mx-auto '>
       <PageHeadings 
         title='Order Tracking' 
         description='Find out the current state and expected delivery date for your orders'

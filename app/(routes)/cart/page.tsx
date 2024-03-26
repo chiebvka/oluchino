@@ -11,7 +11,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
-
+import { Input } from "@/components/ui/input";
 import Buttons from '@/components/Buttons'
 import { formatPrice } from '@/lib/format'
 import PageHeadings from '@/components/PageHeadings'
@@ -20,14 +20,14 @@ type Props = {}
 
 export default function page({}: Props) {
   return (
-    <div className='min-h-screen w-full relative my-auto py-16 gap-y-5 px-3 max-w-7xl mx-auto '>
+    <div className='min-h-screen w-full relative my-auto py-16 gap-y-5 px-3  max-w-6xl xl:max-w-7xl mx-auto '>
       <PageHeadings
         title='Your Cart' 
         description='Find your most trusted and reliable brands while also discovering new brands'
       />
         {/* <EmptyCart /> */}
         <div className='flex flex-col-reverse md:flex-row gap-x-6 gap-y-5 items-start justify-center gap-6 rounded-lg p-5 md:p-8 h-full w-full border-2 border-black '>
-          <div className='flex flex-col gap-y-3 lg:p-4  md:basis-2/3 w-full'>
+          <div className='flex flex-col gap-y-5 lg:p-4  md:basis-2/3 w-full'>
             {products.slice(0, 5).map((product) => (
 
               <CartProduct 
@@ -99,7 +99,11 @@ export default function page({}: Props) {
                 </span>
               </CardContent>
               <CardFooter className='w-full flex flex-col'>
-                <Buttons text='Continue to checkout'  /> 
+                <div className="flex w-full z-30 space-x-3 items-center">
+                  <Input type="email" placeholder="Apply Coupon Code" className='md:w-56' />
+                  <Buttons text="Apply " />
+                </div>
+                {/* <Buttons text='Continue to checkout'  />  */}
                 <div className="relative border-2 my-5">
                   <div className="absolute inset-1  flex items-center">
                     <span className="w-full border-t border-t-palette" />

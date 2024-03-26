@@ -6,7 +6,7 @@ type Props = {}
 
 export default function page({}: Props) {
   return (
-    <div className='min-h-screen w-full relative my-auto py-4 gap-y-5 px-3 max-w-7xl mx-auto '>
+    <div className='min-h-screen w-full relative my-auto py-4 gap-y-5 px-3  max-w-6xl xl:max-w-7xl mx-auto '>
       <section className="py-12"> 
         <div className="container mx-auto px-4">
           <nav className="flex">
